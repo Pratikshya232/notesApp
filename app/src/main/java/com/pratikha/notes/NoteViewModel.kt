@@ -11,7 +11,7 @@ class NoteViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository: NoteRespository
 
-    val allNotes : LiveData<List<Note>>
+     val allNotes : LiveData<List<Note>>
     init {
         val dao = NoteDatabase.getDatabase(application).getNoteDao()
          repository = NoteRespository(dao)

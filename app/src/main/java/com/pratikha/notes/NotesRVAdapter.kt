@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class NotesRVAdapter(private val context: Context, private val listener: INotesRVAdapter): RecyclerView.Adapter<NotesRVAdapter.NoteViewHolder>() {
     private val allNotes = ArrayList<Note>()
-    inner class NoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
+     inner class NoteViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val textView  = itemView.findViewById<TextView>(R.id.text)
         val deleteButton = itemView.findViewById<ImageView>(R.id.deleteButton)
 
